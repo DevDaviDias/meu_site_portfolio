@@ -1,0 +1,78 @@
+.fundo {
+  background-image: linear-gradient(
+    to right top,
+    #07B7D5,
+    #18C9E5,
+    #1BCBE7,
+    #18C9E5,
+    #18C9E5,
+    #18C9E5,
+    #0CBDDA,
+    #1BCBE7
+  );
+  padding: 40px 0px 40px 0px;
+  height: 20dvh; /* Ocupa 100% da altura da tela */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.titleCenter {
+  margin-top: 10px;
+
+  align-items: center;
+  justify-content: center;
+}
+.titulo {
+  color: #f8f8ff;
+  font-family: "Roboto", sans-serif;
+}
+
+.subtitulo {
+  color: #f0f6fc;
+  font-family: "Roboto", sans-serif;
+}
+.paragrafo {
+  color: #ffd33c;
+}
+.typing {
+  text-decoration: underline;
+  text-decoration-color: #a2def0;
+  text-underline-offset: 10px;
+  font-weight: 100;
+  animation: underlineColor 4s linear infinite;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Quando o menu está fixo no desktop */
+@media (min-width: 1024px) {
+  .titleCenter {
+    margin-top: 5px;
+    align-items: center;
+    margin-left: 25em;
+  }
+  .titulo {
+    font-size: 3em;
+  }
+  .subtitulo {
+    font-size: 1.8em;
+  }
+
+}

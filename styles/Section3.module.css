@@ -1,0 +1,11 @@
+.fundo3{
+  display: flex;
+  justify-content: center;
+}
+
+.titulo3{
+  transform: rotate(90deg);
+  color:red;
+  rotate: calc(4.5em);
+  
+}

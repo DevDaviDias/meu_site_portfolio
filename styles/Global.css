@@ -1,0 +1,32 @@
+
+
+:root{
+  --azul:#5BD3E4;
+  --branco:#FFFF;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Helvetica, sans-serif;
+}
+
+
+.fundo1.dark {
+  background: #121212; /* fundo dark */
+  color: #e0e0e0; /* texto claro */
+}
+
+/* estilos dos ícones, se quiser mudar no dark mode */
+.iconCircle {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+
