@@ -4,29 +4,33 @@
   --azul:#5BD3E4;
   --branco:#FFFF;
 }
-
-html {
-  scroll-behavior: smooth;
-}
-body{
-  margin:0;
+*{
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  height: 100vh;
+  box-sizing: border-box;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Helvetica, sans-serif;
+  background-image: linear-gradient(
+    to right top,
+    #07B7D5,
+    #18C9E5,
+    #1BCBE7,
+    #18C9E5,
+    #18C9E5,
+    #18C9E5,
+    #0CBDDA,
+    #1BCBE7
+  );
+  
 }
 
 
-.fundo1.dark {
-  background: #121212; /* fundo dark */
-  color: #e0e0e0; /* texto claro */
-}
 
-/* estilos dos ícones, se quiser mudar no dark mode */
-.iconCircle {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 1rem;
-}
+
 
 

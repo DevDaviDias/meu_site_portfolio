@@ -15,7 +15,7 @@ export default function MenuHamburguer() {
   // Detecta largura da tela
   useEffect(() => {
     const handleResize = () => {
-      const desktop = window.innerWidth >= 1024;
+      const desktop = window.innerWidth >= 1080;
       setIsDesktop(desktop);
       setAberto(desktop);
     };
