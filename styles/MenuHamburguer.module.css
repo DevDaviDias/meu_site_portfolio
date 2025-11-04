@@ -6,7 +6,6 @@
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-
   position: fixed; /* <- Fica fixo na tela */
   top: 20px;       /* Distância do topo */
   right: 20px;     /* Fica no lado direito */
@@ -23,6 +22,8 @@
  font-size: 1.7em;
  margin-left: 3.2em;
  font-weight: 100;
+ margin-top: 0.4em;
+ margin-bottom: 0.4em;
 }
 .navRedesSociais{
   display: flex;
@@ -177,13 +178,12 @@
 
 .footerMenu {
   background-color:#127c91 ;
-
   width: 100%;
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #87C6C7;
-
-
+  padding: 14px 0 ;
+  margin-top: 11.4em;
 }
 
 .darkTheme{
@@ -201,6 +201,8 @@
 }
 
 @media (min-width: 1024px) {
-
+.footerMenu {
+margin-top: 24em;
+}
 
 }

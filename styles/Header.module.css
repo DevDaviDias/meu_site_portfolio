@@ -1,5 +1,6 @@
+
 .fundo {
-  background-image: linear-gradient(
+  background: linear-gradient(
     to right top,
     #07B7D5,
     #18C9E5,
@@ -11,7 +12,7 @@
     #1BCBE7
   );
   padding: 40px 0px 40px 0px;
-  height: 20dvh; /* Ocupa 100% da altura da tela */
+  height: 25dvh; /* Ocupa 100% da altura da tela */
   width: 100%;
 }
 
@@ -19,6 +20,7 @@
   margin-top: 10px;
   align-items: center;
   justify-content: center;
+  margin-left: 2em;
 }
 .titulo {
   color: #f8f8ff;

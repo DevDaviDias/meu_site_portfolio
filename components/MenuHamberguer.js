@@ -100,15 +100,14 @@ export default function MenuHamburguer() {
           </a>
         </nav>
 
-        <div className={styles.darkTheme}>
-          <p>Tema Claro</p>
-        </div>
+         
+        
 
         {/* Footer */}
         <div className={styles.footerMenu}>
           <p>© Copyright Davi Dias</p>
         </div>
-        
+
       </div>
 
       {/* Overlay só no mobile */}
