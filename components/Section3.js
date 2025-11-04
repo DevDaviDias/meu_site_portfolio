@@ -23,7 +23,7 @@ function Section() {
       link: "https://github.com/DevDaviDias",
       imagem: "/img/projeto3.png"
     }  ,{
-      id: 3,
+      id: 4,
       titulo: "Projeto com Bootstrap",
       descricao: "Meu primeiro projeto usando Bootstrap.",
       link: "https://github.com/DevDaviDias",

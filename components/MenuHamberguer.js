@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "../styles/MenuHamburguer.module.css";
 import Image from "next/image";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export default function MenuHamburguer() {
   const [aberto, setAberto] = useState(false);
@@ -99,10 +100,15 @@ export default function MenuHamburguer() {
           </a>
         </nav>
 
+        <div className={styles.darkTheme}>
+          <p>Tema Claro</p>
+        </div>
+
         {/* Footer */}
         <div className={styles.footerMenu}>
-          <p>© Copyright DaviDias</p>
+          <p>© Copyright Davi Dias</p>
         </div>
+        
       </div>
 
       {/* Overlay só no mobile */}

@@ -37,12 +37,12 @@
 }
 .alinhamneto{
   display: flex;
-  gap: 30px;
+  gap: 600px;
   
 }
 .alinhamneto2{
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 300px;
 }
 
