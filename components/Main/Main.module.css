@@ -1,0 +1,94 @@
+.fundo1 {
+  width: 90%;
+  padding: 40px 0px 40px 0px;
+  background-color: #e2fdff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.titulo {
+  margin-left: 1em;
+  font-size: 2em;
+}
+.minhahistoria {
+  background-color: #f9feff;
+  width: 22em;
+  height: 750px;
+  margin-left: 2em;
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 1em;
+  max-width: 700px;
+  margin-bottom: 2em;  
+  padding: 2rem 1rem; /* espaçamento interno */
+  line-height: 1.8; /* altura da linha para leitura confortável */
+  color: #333; /* cor do texto */
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem; /* fonte moderna */
+}
+.infopessoal {
+  background-color: #f9feff;
+  width: 20em;
+  border-radius: 10px;
+  padding: 25px;
+  margin-left: 2em;
+  margin-top: em;
+  max-width: 700px;
+  padding: 2rem 1rem; /* espaçamento interno */
+  line-height: 1.8; /* altura da linha para leitura confortável */ /* tamanho da fonte agradável */
+  color: #333; /* cor do texto */
+  font-family: "Inter", sans-serif;
+  margin-bottom: 2em;
+}
+.interesses {
+  background-color: #f9feff;
+  width: 20em;
+  border-radius: 10px;
+  padding: 25px;
+  margin-left: 2em;
+  margin-top: 2em;
+  max-width: 700px; /* largura máxima para não ficar muito largo */
+  /* centraliza horizontalmente */
+  padding: 2rem 1rem; /* espaçamento interno */
+  line-height: 1.8; /* altura da linha para leitura confortável */ /* tamanho da fonte agradável */
+  color: #333; /* cor do texto */
+  font-family: "Inter", sans-serif;
+}
+
+@media (min-width: 1024px) {
+  .titulo {
+    margin-left: 12em;
+    font-size: 2em;
+  }
+  .minhahistoria {
+    background-color: #f9feff;
+    width: 34em;
+    height: 600px;
+    margin-left: 27em;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 1em;
+    font-size: 0.9rem;
+  }
+  .alinhamento {
+    display: flex;
+    gap: 2em;
+  }
+  .infopessoal {
+    background-color: #f9feff;
+    width: 35em;
+    padding: 25px;
+    margin-top: 1em;
+    height: 22em;
+    font-size: 0.9rem;
+  }
+  .interesses {
+    width: 35em;
+    border-radius: 10px;
+    padding: 25px;
+    margin-left: 1em;
+    margin-top: 3em;
+    height: 22em;
+    font-size: 0.9rem;
+  }
+}

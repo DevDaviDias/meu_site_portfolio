@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import styles from "../styles/MenuHamburguer.module.css";
+import styles from "./MenuHamburguer.module.css";
 import Image from "next/image";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 

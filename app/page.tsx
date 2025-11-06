@@ -1,12 +1,10 @@
 "use client";
 
-import Header from "../components/Header";
-import Main from "../components/Main";
-import Section from "../components/Section3";
-import Section1 from "../components/Section1";
-import Section2 from "../components/Section2";
-import MenuHamburguer from "../components/MenuHamberguer";
-import Footer from "../components/Footer";
+import Header from "../components/Header/Header";
+import Main from "../components/Main/Main";
+
+import MenuHamburguer from "../components/MenuHamberguer/MenuHamberguer";
+import Footer from "../components/Footer/Footer.js";
 
 export default function Home() {
   return (
@@ -14,9 +12,6 @@ export default function Home() {
       <MenuHamburguer />
       <Header />
       <Main />
-      <Section1 />
-      <Section2 />
-      <Section />
       <Footer />
     </div>
   );
