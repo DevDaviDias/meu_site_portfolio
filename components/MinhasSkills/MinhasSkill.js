@@ -1,4 +1,4 @@
-import style from "@/components/MinhasSkills/MinhasSkill.module.css";
+
 
 import { motion } from "framer-motion";
 import { Progress } from "@/components/ui/progress";
@@ -109,7 +109,7 @@ export default function Skills() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg w-80 md:ml-[22em] w-[76em]">
+          <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg w-80 md:ml-[22em] md:w-[76em]">
             <CardHeader>
               <CardTitle className="text-xl text-slate-800">
                 Certificações & Cursos
