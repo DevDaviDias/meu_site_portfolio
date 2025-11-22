@@ -37,27 +37,34 @@ export default function Skills() {
   ];
 
   const certificacao = [
-    "Curso em andamento com Felipe Deschamps – estudando lógica moderna, boas práticas, padrões e conceitos essenciais para me tornar um desenvolvedor mais completo."
+    "Curso em andamento com Felipe Deschamps" ,
+     "estudando lógica moderna, boas práticas",
+    " padrões e conceitos essenciais para me tornar",
+      "um desenvolvedor mais completo."
   ];
 
   return (
-    <div className="space-y-8 card">
+   
+    <div className="space-y-8 pl-10">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="text-3xl font-normal text-slate-800 mb-6 pt-4 pl-4">Minhas Skills</h2>
+        <h2 className="text-3xl font-normal text-slate-800 mb-6 pt-4 pl-4 lg:pl-[12em]">Minhas Skills</h2>
 
-        <div className="grid lg:grid-cols-3 gap-6 mb-6">
-          {categoriasDeHabilidade.map((category, categoryIndex) => (
-            <motion.div
-              key={category.titulo}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: categoryIndex * 0.2 }}
-            >
-              <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg h-full">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-[6px] mb-6 justify-start md:pl-[22em]">
+
+
+  {categoriasDeHabilidade.map((category, categoryIndex) => (
+    <motion.div
+      key={category.titulo}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: categoryIndex * 0.2 }}
+      className="max-w-[20em] w-full"
+    >
+      <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg h-full">
                 <CardHeader>
                   <CardTitle className="text-xl text-slate-800">
                     {category.titulo}
@@ -102,7 +109,7 @@ export default function Skills() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg w-80">
+          <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg w-80 md:ml-[22em] w-[76em]">
             <CardHeader>
               <CardTitle className="text-xl text-slate-800">
                 Certificações & Cursos
@@ -135,5 +142,6 @@ export default function Skills() {
         </motion.div>
       </motion.div>
     </div>
+  
   );
 }
