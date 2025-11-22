@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,6 +10,15 @@
 
 html, body {
   scroll-behavior: smooth;
-  height: 100%;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Helvetica, sans-serif;
+
+  
 }
+
+
+
+
+
+
