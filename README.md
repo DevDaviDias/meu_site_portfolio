@@ -3,8 +3,6 @@
 Bem-vindo ao meu portfólio!  
 Este projeto está sendo desenvolvido com o objetivo de apresentar meus projetos, habilidades e experiência como desenvolvedor **Front-end**, utilizando tecnologias modernas do ecossistema React.
 
-
-## link: https://devdavidias.com.br/
 ---
 
 ## 🧑‍💻 Sobre mim
@@ -41,7 +39,7 @@ Tenho experiência com **HTML, CSS e JavaScript** e estou evoluindo meus projeto
 
 ## 🌐 Acesso ao Projeto
 
-🔗 Portfólio online: https://bit.ly/DevDaviDias  
+🔗 Portfólio online: https://devdavidias.com.br/ 
 🔗 Repositório GitHub: https://github.com/DevDaviDias  
 
 ---
