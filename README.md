@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Portfólio — Davi de Jesus Dias
 
-## Getting Started
+Bem-vindo ao meu portfólio!  
+Este projeto está sendo desenvolvido com o objetivo de apresentar meus projetos, habilidades e experiência como desenvolvedor **Front-end**, utilizando tecnologias modernas do ecossistema React.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## link: https://devdavidias.com.br/
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🧑‍💻 Sobre mim
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Sou estudante de **Análise e Desenvolvimento de Sistemas**, apaixonado por programação e focado em desenvolvimento **Front-end**.  
+Tenho experiência com **HTML, CSS e JavaScript** e estou evoluindo meus projetos utilizando **TypeScript, React e Next.js**, sempre buscando boas práticas, responsividade e acessibilidade.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📍 Localização: Minas Gerais – Brasil  
+---
 
-## Learn More
+## 🖥️ Tecnologias Utilizadas
 
-To learn more about Next.js, take a look at the following resources:
+- TypeScript  
+- React  
+- Next.js  
+- Vite  
+- Tailwind CSS  
+- HTML5  
+- Git & GitHub  
+- Responsividade (Mobile First)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📂 Funcionalidades do Portfólio
 
-## Deploy on Vercel
+- Página inicial com apresentação pessoal  
+- Seção **Sobre mim**  
+- Seção **Projetos** com links para GitHub e deploy  
+- Seção **Habilidades / Skills**  
+- Seção **Contato**  
+- Layout responsivo para mobile, tablet e desktop  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🌐 Acesso ao Projeto
+
+🔗 Portfólio online: https://bit.ly/DevDaviDias  
+🔗 Repositório GitHub: https://github.com/DevDaviDias  
+
+---
+
+## 📌 Status do Projeto
+
+🚧 Em desenvolvimento
+
+---
+
+## 🤝 Contato
+
+📧 Email: devdavidias@gmail.com  
+💼 LinkedIn: https://www.linkedin.com/in/devdavidias  
+💻 GitHub: https://github.com/DevDaviDias  
