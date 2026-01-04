@@ -1,6 +1,17 @@
 import styles from "./SobreMin.module.css";
-import { Mail, phone, MapPin, Github, Linkedin, Code , Coffee , Music, Gamepad2} from "lucide-react";
+import {
+  Mail,
+  phone,
+  MapPin,
+  Github,
+  Linkedin,
+  Code,
+  Coffee,
+  Music,
+  Gamepad2,
+} from "lucide-react";
 import Info from "./info";
+import Subtitulo from "../ui/subtitulo";
 
 function Main() {
   return (
@@ -9,7 +20,7 @@ function Main() {
       <div className={styles.alinhamento}>
         <div className={styles.conteudoMain1}>
           <div className={styles.minhahistoria}>
-            <h2>Minha História</h2>
+            <Subtitulo subtitle="Minha História"></Subtitulo>
             <p>
               Olá! Sou Davi Dias, desenvolvedor front-end apaixonado por
               tecnologia. Atualmente curso Análise e Desenvolvimento de Sistemas
@@ -18,7 +29,7 @@ function Main() {
               transforma ideias em soluções reais, e estou sempre em busca de
               novos desafios e aprendizado.
             </p>
-             <br/>
+            <br />
             <p>
               Tenho experiência com HTML, CSS, JavaScript e Git, e estou
               expandindo meus conhecimentos em React, Node.js, PHP e bancos de
@@ -26,7 +37,7 @@ function Main() {
               com design moderno, contribuindo para projetos que impactem
               positivamente as pessoas.
             </p>
-            <br/>
+            <br />
 
             <p>
               Além do desenvolvimento, leciono programação e robótica, o que
@@ -39,15 +50,29 @@ function Main() {
 
         <div className={styles.alinhamento2}>
           <div className={styles.infopessoal}>
-            <h2>Informações Pessoais</h2>
-            <Info icon={<Mail />} text="Email" complemento="devdavidias@gmail.com"></Info>
-            <Info icon={<MapPin />} text="Localização" complemento="belo Horizonte, MG - Brasil"></Info>
-            <Info icon={< Code/>} text="Experiência" complemento= "1 ano" > </Info>
-            <Info icon={<Coffee/>} text="Cafés por dia" complemento='infinite' ></Info>
+            <Subtitulo subtitle="Informações Pessoais"></Subtitulo>
+            <Info
+              icon={<Mail />}
+              text="Email"
+              complemento="devdavidias@gmail.com"
+            ></Info>
+            <Info
+              icon={<MapPin />}
+              text="Localização"
+              complemento="belo Horizonte, MG - Brasil"
+            ></Info>
+            <Info icon={<Code />} text="Experiência" complemento="1 ano">
+              {" "}
+            </Info>
+            <Info
+              icon={<Coffee />}
+              text="Cafés por dia"
+              complemento="infinite"
+            ></Info>
           </div>
 
           <div className={styles.interesses}>
-            <h2>Interesses</h2>
+            <Subtitulo subtitle="Interesses"></Subtitulo>
             <p>Programação</p>
             <p>Desenvolvimento web e mobile</p>
 
