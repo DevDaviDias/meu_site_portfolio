@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import Info from "./info";
 import Subtitulo from "../ui/subtitulo";
+import Intesresses from "../ui/interesses";
 
 function Main() {
   return (
@@ -73,17 +74,32 @@ function Main() {
 
           <div className={styles.interesses}>
             <Subtitulo subtitle="Interesses"></Subtitulo>
-            <p>Programação</p>
-            <p>Desenvolvimento web e mobile</p>
-
-            <p>Música</p>
-            <p>Rock, eletrônica e lo-fi</p>
-
-            <p>Games</p>
-            <p>RPG e estratégia</p>
-
-            <p>Café</p>
-            <p>Especialidade em grãos especiais</p>
+            <div className="flex gap-4 ">
+              <div className="flex gap-4 flex-col" >
+                <Intesresses
+                icon={<Code />}
+                  title="Programação"
+                  interesse="Desenvolvimento web e mobile"
+                ></Intesresses>
+                <Intesresses
+                icon={<Music />}
+                  title="Música"
+                  interesse="Rock, eletrônica e lo-fi"
+                ></Intesresses>
+              </div>
+              <div className="flex gap-4 flex-col ">
+                <Intesresses
+                icon={<Gamepad2 />}
+                  title="Games"
+                  interesse="RPG e estratégia"
+                ></Intesresses>
+                <Intesresses
+                icon={<Coffee />}
+                  title="Programação"
+                  interesse="Especialidade em grãos especiais"
+                ></Intesresses>
+              </div>
+            </div>
           </div>
         </div>
       </div>
