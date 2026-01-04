@@ -1,4 +1,6 @@
 import styles from "./SobreMin.module.css";
+import { Mail, phone, MapPin, Github, Linkedin, Code , Coffee , Music, Gamepad2} from "lucide-react";
+import Info from "./info";
 
 function Main() {
   return (
@@ -38,14 +40,10 @@ function Main() {
         <div className={styles.alinhamento2}>
           <div className={styles.infopessoal}>
             <h2>Informações Pessoais</h2>
-            <p>Localização</p>
-            <p>belo Horizonte, MG - Brasil</p>
-            <p>Idade</p>
-            <p>27 anos</p>
-            <p>Experiência</p>
-            <p>2 anos</p>
-            <p>Cafés por dia</p>
-            <p>∞</p>
+            <Info icon={<Mail />} text="Email" complemento="devdavidias@gmail.com"></Info>
+            <Info icon={<MapPin />} text="Localização" complemento="belo Horizonte, MG - Brasil"></Info>
+            <Info icon={< Code/>} text="Experiência" complemento= "1 ano" > </Info>
+            <Info icon={<Coffee/>} text="Cafés por dia" complemento='infinite' ></Info>
           </div>
 
           <div className={styles.interesses}>

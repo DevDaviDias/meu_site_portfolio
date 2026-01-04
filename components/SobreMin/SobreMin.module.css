@@ -92,3 +92,26 @@
     font-size: 0.9rem;
   }
 }
+
+.infoItem{
+ display: flex;
+ padding: 5.6px 0;
+ gap: 0.7em;
+ align-items: center;
+}
+.icon{
+  background: linear-gradient(90deg,#0EAED9, #0EAED9, #219CE6);
+ padding: 0.5rem;
+ border-radius: 50%;
+ color: white;
+}
+.infoText{
+ 
+}
+.text{
+  font-weight: bold;
+}
+.complemento{
+  color: #000000;
+  font-weight: 559;
+}

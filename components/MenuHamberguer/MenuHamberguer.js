@@ -3,6 +3,7 @@ import styles from "./MenuHamburguer.module.css";
 import Image from "next/image";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
+
 export default function MenuHamburguer() {
   const [aberto, setAberto] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);

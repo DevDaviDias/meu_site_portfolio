@@ -1,4 +1,5 @@
 import styles from "./Main.module.css";
+import { Mail, phone, Instagram, Github, Linkedin } from "lucide-react";
 
 function Main() {
   return (
