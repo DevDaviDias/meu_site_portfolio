@@ -12,13 +12,10 @@ export default function Home() {
     <div>
       <MenuHamburguer />
       <Header />
-    
       <SobreMin />
-      <Formacoes/>
+      <Formacoes />
       <MinhasSkills />
-
       <Progetos />
-      
     </div>
   );
 }
