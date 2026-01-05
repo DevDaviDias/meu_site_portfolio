@@ -13,11 +13,12 @@ import {
 import Info from "./info";
 import Subtitulo from "../ui/subtitulo";
 import Intesresses from "../ui/interesses";
+import Titulo from "../ui/titulo";
 
 function Main() {
   return (
     <div className={styles.fundo1} id="sobre">
-      <h2 className={styles.titulo}>Sobre mim</h2>
+      <Titulo texto="Sobre mim" id="sobre"></Titulo>
       <div className={styles.alinhamento}>
         <div className={styles.conteudoMain1}>
           <div className={styles.minhahistoria}>

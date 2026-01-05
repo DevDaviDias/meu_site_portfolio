@@ -51,7 +51,7 @@ export default function Skills() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="text-3xl font-normal text-slate-800 mb-6 pt-4 pl-4 lg:pl-[12em]">Minhas Skills</h2>
+        <h2 id="skill" className="text-3xl font-normal text-slate-800 mb-6 pt-4 pl-4 lg:pl-[12em]">Minhas Skills</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-[6px] mb-6 justify-start md:pl-[22em]">
 

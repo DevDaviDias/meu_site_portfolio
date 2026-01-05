@@ -6,10 +6,10 @@
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-  position: fixed; /* <- Fica fixo na tela */
-  top: 20px;       /* Distância do topo */
-  right: 20px;     /* Fica no lado direito */
-  z-index: 1001;   /* Sempre acima do menu */
+  position: fixed; 
+  top: 20px;       
+  right: 20px;    
+  z-index: 1001;   
 }
 
 .bar {

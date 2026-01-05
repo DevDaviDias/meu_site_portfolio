@@ -1,15 +1,13 @@
-import { motion, AnimatePresence } from 'framer-motion';
-import AboutSection from '@/components/sections/AboutSection';
-import SkillsSection from '@/components/sections/SkillsSection';
-import EducationSection from '@/components/sections/EducationSection';
-import ProjectsSection from '@/components/sections/ProjectsSection';
+import Titulo from "../ui/titulo"
+import Subtitulo from "../ui/subtitulo"
 
-interface MainContentProps {
-  activeSection: string;
-}
+export default function Formacoes() {
+  return (
+    <>
+      <Titulo texto="Formações" id="formacoes"></Titulo>
+      <Subtitulo subtitle="Educação normal" ></Subtitulo>
+    </>
 
-export default function MainContent({ activeSection }: MainContentProps) {
- 
-  };
+  )}
 
   
