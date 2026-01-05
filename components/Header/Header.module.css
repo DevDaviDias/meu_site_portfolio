@@ -25,11 +25,13 @@
 .titulo {
   color: #f8f8ff;
   font-family: "Roboto", sans-serif;
+  font-size: 2.4em;
 }
 
 .subtitulo {
   color: #f0f6fc;
   font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
 }
 .paragrafo {
   color: #ffd33c;
