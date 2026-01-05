@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfólio de Davi Dias
 
-## Getting Started
+🔗 Site: [devdavidias.com.br](https://devdavidias.com.br)
 
-First, run the development server:
+Portfólio pessoal desenvolvido em **Next.js 13** e **React**, mostrando meus projetos, certificações e habilidades em desenvolvimento web.  
+O site é responsivo, moderno e inclui animações e interações para melhorar a experiência do usuário.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tecnologias e libs utilizadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **React 18 + Next.js 13 (App Router)**
+- **Vite** (para desenvolvimento rápido)
+- **Tailwind CSS** (estilização moderna e responsiva)
+- **Framer Motion** (animações e interações)
+- **Lucide Icons** (ícones vetoriais leves)
+- **FontAwesome** (ícones adicionais)
+- **JavaScript / TypeScript** (lógica e componentes)
+- **Deploy na vercel** (backend de API e frontend)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Funcionalidades
 
-To learn more about Next.js, take a look at the following resources:
+- Página inicial com **apresentação e destaques**
+- Seção de **projetos** com cards interativos
+- Seção de **certificações** renderizada dinamicamente
+- Layout responsivo para **desktop e mobile**
+- Animações e transições suaves usando **Framer Motion**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Estrutura do projeto
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+root/
+├─ app/ # Next.js App Router
+│ ├─ head.tsx # Head do site (meta, favicon)
+│ ├─ layout.tsx # Root Layout
+│ └─ page.tsx # Página inicial
+├─ public/ # Favicon e assets
+├─ src/ # Componentes React
+│ ├─ components/ # Cards, Navbar, Footer
+│ └─ styles/ # CSS/Tailwind
+├─ package.json
+└─ README.md
