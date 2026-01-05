@@ -1,6 +1,6 @@
 type TituloProps = {
     texto: string;
-    id: string;
+    id?: string;
 };
 
 export default function Titulo({ texto , id }: TituloProps) {

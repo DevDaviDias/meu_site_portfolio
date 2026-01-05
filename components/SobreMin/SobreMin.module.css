@@ -6,11 +6,13 @@
   flex-direction: column;
   width: 100%;
   
+  
 }
 .titulo {
   margin-left: 1em;
   font-size: 2em;
 }
+
 .minhahistoria {
   background-color: #f9feff;
   width: 22em;
@@ -89,7 +91,8 @@
   }
   .alinhamento {
     display: flex;
-    gap: 2em;
+    gap: 6em;
+
   }
   .infopessoal {
     background-color: #f9feff;

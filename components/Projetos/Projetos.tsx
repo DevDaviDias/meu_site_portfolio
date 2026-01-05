@@ -67,7 +67,7 @@ export default function Projetos() {
   return (
     <section
       id="projects"
-      className="py-20 bg-gradient-to-br from-slate-50 to-blue-50 md:ml-[22em]"
+      className="md:w-[73em]  bg-gradient-to-br  md:ml-[24.5em]"
     >
       <div className="container mx-auto px-6">
         <motion.div
@@ -77,21 +77,16 @@ export default function Projetos() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-4">
-            Meus Projetos
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-blue-600 mx-auto mb-4" />
-          <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-            Seleção dos meus projetos que demonstram minhas habilidades técnicas.
-          </p>
         </motion.div>
 
         {/* Projetos em Destaque */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-slate-800 mb-8 text-center">
-            Projetos em Destaque
+          <h3 className="text-3xl font-bold text-slate-800 mb-6 pt-4 pl-4 ">
+           Meus Projetos
           </h3>
-          <div className="grid lg:grid-cols-2 gap-8">
+          <h4  className="text-black mb-[2em] pb-4 text-lg pl-4 "> Projetos em Destaque</h4>
+        
+          <div className="grid  md:grid-cols-2 gap-8">
             {featuredProjects.map((project, index) => (
               <motion.div
                 key={project.title}

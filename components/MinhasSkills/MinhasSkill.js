@@ -1,5 +1,3 @@
-
-
 import { motion } from "framer-motion";
 import { Progress } from "@/components/ui/progress";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -13,7 +11,11 @@ export default function Skills() {
         { name: "React", level: 95, color: "from-blue-600 to-blue-400" },
         { name: "TypeScript", level: 88, color: "from-gray-800 to-gray-600" },
         { name: "Next.js", level: 92, color: "from-cyan-500 to-teal-500" },
-        { name: "Tailwind CSS", level: 80, color: "from-green-500 to-emerald-500" },
+        {
+          name: "Tailwind CSS",
+          level: 80,
+          color: "from-green-500 to-emerald-500",
+        },
       ],
     },
     {
@@ -37,34 +39,36 @@ export default function Skills() {
   ];
 
   const certificacao = [
-    "Curso em andamento com Felipe Deschamps" ,
-     "estudando lógica moderna, boas práticas",
+    "Curso em andamento com Felipe Deschamps",
+    "estudando lógica moderna, boas práticas",
     " padrões e conceitos essenciais para me tornar",
-      "um desenvolvedor mais completo."
+    "um desenvolvedor mais completo.",
   ];
 
   return (
-   
-    <div className="space-y-8 pl-10">
+    <div className="space-y-8 pl-10 ">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h2 id="skill" className="text-3xl font-normal text-slate-800 mb-6 pt-4 pl-4 lg:pl-[12em]">Minhas Skills</h2>
+        <h2
+          id="skill"
+          className="text-3xl font-normal text-slate-800 mb-6 pt-4 pl-4 lg:pl-[12em]"
+        >
+          Minhas Skills
+        </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-[6px] mb-6 justify-start md:pl-[22em]">
-
-
-  {categoriasDeHabilidade.map((category, categoryIndex) => (
-    <motion.div
-      key={category.titulo}
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: categoryIndex * 0.2 }}
-      className="max-w-[20em] w-full"
-    >
-      <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg h-full">
+        <div className="flex flex-col md:flex-row md:flex-wrap gap-y-6 md:gap-x-[5em] md:gap-1 mb-6 md:pl-[22em] w-full md:justify-start">
+          {categoriasDeHabilidade.map((category, categoryIndex) => (
+            <motion.div
+              key={category.titulo}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: categoryIndex * 0.2 }}
+              className="max-w-[20em] w-full"
+            >
+              <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg h-full">
                 <CardHeader>
                   <CardTitle className="text-xl text-slate-800">
                     {category.titulo}
@@ -89,8 +93,7 @@ export default function Skills() {
                           animate={{ width: `${skill.level}%` }}
                           transition={{
                             duration: 1.5,
-                            delay:
-                              categoryIndex * 0.2 + skillIndex * 0.1,
+                            delay: categoryIndex * 0.2 + skillIndex * 0.1,
                           }}
                           className={`h-2 bg-gradient-to-r ${skill.color} rounded-full`}
                         />
@@ -109,7 +112,7 @@ export default function Skills() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg w-80 md:ml-[22em] md:w-[76em]">
+          <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-lg w-80 md:ml-[22em] md:w-[70.5em]">
             <CardHeader>
               <CardTitle className="text-xl text-slate-800">
                 Certificações & Cursos
@@ -142,6 +145,5 @@ export default function Skills() {
         </motion.div>
       </motion.div>
     </div>
-  
   );
 }

@@ -1,4 +1,3 @@
-/* Botão Hambúrguer */
 .hamburguer {
   width: 30px;
   height: 22px;
@@ -6,203 +5,136 @@
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-  position: fixed; 
-  top: 20px;       
-  right: 20px;    
-  z-index: 1001;   
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
 }
 
 .bar {
   height: 4px;
-    background-color: #f8f8FF;
+  background-color: #f8f8ff;
   border-radius: 2px;
-}
-.titleName{
- color:#f8f8FF;
- font-size: 1.7em;
- margin-left: 3.2em;
- font-weight: 100;
- margin-top: 0.4em;
- margin-bottom: 0.4em;
-}
-.navRedesSociais{
-  display: flex;
-  gap: 16px;
-  margin-left: 3.6em;
-}
-.navRedesSociais a{
-   text-decoration: none;
-  color: #ffffff;
-  font-weight: 100;
-  transition: 0.2s;
-}
-.navRedesSociais > a > i {
- font-size: 1.5em;
-}
-.tituloIcone{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2em;
-  font-weight: 100;
-}
-
-
-
-/* Menu Lateral */
-.menuLateral {
-  position: fixed;
-  top: 0;
-  left: -350px; /* Escondido inicialmente */
-  width: 300px;
-  height: 100%;
-  background: linear-gradient(#1ECFEA,#16C6E3,#09B9D6) ;
-  box-shadow: 2px 0 10px rgba(0,0,0,0.2);
-  display: flex;
-  flex-direction: column;
-  padding: 0px;
-  transition: 0.3s ease;
-  z-index: 1000;
-}
-
-.menuLateral.aberto {
-  left: 0; /* Aparece */
-}
-
-.menuLinks {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  margin-top: 45px;
-  margin-left: 0.9em;
-}
-
-.menuLinks a {
-  color: #FFF8F7; /* cor mais suave que preto */
-  font-weight: 100;
-  font-size: 18px; /* aumenta a letra */
-  padding: 15.5px 15px; /* deixa o link mais “clicável” */
-  border-radius: 8px; /* cantos arredondados */
-  transition: all 0.3s ease; /* transição suave */
-  display: flex;
-  align-items: center;
-  gap: 10px; /* espaço entre ícone e texto */
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.menuLinks a:hover {
-  background-color: #43D0E7; /* fundo azul no hover */
-  color: #fff; /* texto branco */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* sombra suave */
-  transform: translateX(5px); /* efeito de movimento sutil */
-}
-
-/* Se quiser, aumenta o tamanho dos ícones */
-.menuLinks a i {
-  font-size: 20px;
-}
-
-/* Botão de fechar */
-.btnFechar {
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  align-self: flex-end;
-}
-
-/* Fundo escurecido */
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-  z-index: 999;
-}
-
-
-/* Slider customizado */
-.slider {
-  display: inline-block;
-  width: 50px;
-  height: 25px;
-  background: #ccc;
-  border-radius: 25px;
-  position: relative;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.slider::before {
-  content: "";
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 19px;
-  height: 19px;
-  background: white;
-  border-radius: 50%;
   transition: 0.3s;
 }
 
-/* Quando marcado */
-.darkModeSwitch input:checked + .slider {
-  background: #333;
-}
-
-.darkModeSwitch input:checked + .slider::before {
-  transform: translateX(25px);
-}
-
-/* Ícone sol/lua */
-.icon {
-  margin-left: 10px;
-  font-size: 20px;
-  font-weight: 100;
-}
-/* Quando menu estiver aberto */
+/* Animação do hambúrguer */
 .hamburguer.ativo .bar:nth-child(1) {
   transform: rotate(45deg) translate(5px, 8px);
 }
 
 .hamburguer.ativo .bar:nth-child(2) {
-  opacity: 0; /* Desaparece o meio */
+  opacity: 0;
 }
 
 .hamburguer.ativo .bar:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -8px);
 }
 
+
+.menuLateral {
+  position: fixed;
+  top: 0;
+  left: -350px;
+  width: 300px;
+  height: 100vh;
+  background: linear-gradient(#1ecfea, #16c6e3, #09b9d6);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s ease;
+  z-index: 1000;
+}
+
+.menuLateral.aberto {
+  left: 0;
+}
+
+
+.tituloIcone {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.titleName {
+  color: #f8f8ff;
+  font-size: 1.7em;
+  font-weight: 100;
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+
+.navRedesSociais {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 1.5rem;
+}
+
+.navRedesSociais a {
+  color: #ffffff;
+  transition: 0.2s;
+}
+
+.navRedesSociais a:hover {
+  transform: scale(1.1);
+}
+
+.navRedesSociais i {
+  font-size: 1.5em;
+}
+
+
+.menuLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0 1rem;
+}
+
+.menuLinks a {
+  color: #fff8f7;
+  font-weight: 100;
+  font-size: 18px;
+  padding: 14px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.menuLinks a:hover {
+  background-color: #43d0e7;
+  color: #fff;
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.menuLinks i {
+  font-size: 20px;
+}
+
+
 .footerMenu {
-  background-color:#127c91 ;
+  margin-top: auto; /* 🔥 ESSENCIAL */
+  background-color: #127c91;
   width: 100%;
   text-align: center;
   font-size: 0.9rem;
-  color: #87C6C7;
-  padding: 14px 0 ;
-  margin-top: 11.4em;
+  color: #87c6c7;
+  padding: 14px 0;
 }
 
-.darkTheme{
-   background-color:#2c0510 ;
-   margin-left: 2em;
-   border-radius: 5px;
-  width: 17em;
-  text-align: center;
-  font-size: 0.9rem;
-   color: #fff; /* texto branco */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
-  margin-bottom: 1.3em;
-  margin-top: 10em;
-  
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
 }
 
-@media (min-width: 1024px) {
-.footerMenu {
-margin-top: 24em;
-}
 
-}

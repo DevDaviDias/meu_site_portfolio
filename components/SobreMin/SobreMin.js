@@ -18,7 +18,7 @@ import Titulo from "../ui/titulo";
 function Main() {
   return (
     <div className={styles.fundo1} id="sobre">
-      <Titulo texto="Sobre mim" id="sobre"></Titulo>
+      <h2 className={styles.titulo}>Sobre mim</h2>
       <div className={styles.alinhamento}>
         <div className={styles.conteudoMain1}>
           <div className={styles.minhahistoria}>
