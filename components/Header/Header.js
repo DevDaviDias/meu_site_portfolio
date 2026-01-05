@@ -4,7 +4,7 @@ import styles from "./Header.module.css";
 export default function Header() {
   const [text, setText] = useState("");
   const [deleting, setDeleting] = useState(false);
-  const fullText = "Back-end";
+  const fullText = "Full Stack ";
 
   useEffect(() => {
     let timeout;

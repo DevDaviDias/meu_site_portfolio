@@ -74,7 +74,9 @@
   .titulo {
     margin-left: 12em;
     font-size: 2em;
+    font-weight: unset;
   }
+
   .minhahistoria {
     background-color: #f9feff;
     width: 34em;
