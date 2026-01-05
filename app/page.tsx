@@ -5,7 +5,6 @@ import SobreMin from "@/components/SobreMin/SobreMin.js";
 import MenuHamburguer from "@/components/MenuHamberguer/MenuHamberguer";
 import MinhasSkills from "@/components/MinhasSkills/MinhasSkill";
 import Progetos from "@/components/Projetos/Projetos";
-import Footer from "@/components/Footer/Footer";
 import Formacoes from "@/components/Formacoes/Formacoes";
 
 export default function Home() {
@@ -19,7 +18,7 @@ export default function Home() {
       <MinhasSkills />
 
       <Progetos />
-      <Footer />
+      
     </div>
   );
 }

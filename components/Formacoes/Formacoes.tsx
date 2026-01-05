@@ -7,7 +7,8 @@ import { Icon } from "lucide-react";
 export default function Formacoes() {
   return (
     <>
-      <Titulo texto="Formações" id="formacoes"></Titulo>
+    <h2 id="formacoes"></h2>
+      <Titulo texto="Formações"></Titulo>
       
       <h2 className="md:ml-[17.4em] mb-[1em] text-[1.4rem] text-slate-600 ">
         

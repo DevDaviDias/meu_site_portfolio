@@ -28,14 +28,14 @@ export default function Projetos() {
       featured: true,
     },
     {
-      title: "Aplicação de Adoção de Pets",
+      title: "chronos pomodoro",
       description:
-        "Site onde usuários podem cadastrar pets para adoção e visualizar animais disponíveis.",
+        "Aplicação Pomodoro em desenvolvimento, focada em produtividade e organização dos estudos.",
       imagem:
-        "https://images.unsplash.com/photo-1517849845537-4d257902454a?w=500&fit=crop",
-      techologies: ["React", "Firebase", "Tailwind", "Node.js"],
-      github: "",
-      demo: "",
+        "/chronos.png",
+      techologies: ["React", "next", "Tailwind", "Node.js"],
+      github: "https://github.com/DevDaviDias/chronos-pomodoro",
+      demo: "https://devdavidias.github.io/chronos-pomodoro/",
       featured: false,
     },
     {
@@ -49,14 +49,13 @@ export default function Projetos() {
       featured: false,
     },
     {
-      title: "Landing Page para Cafeteria",
+      title: "API – Classroom of the Elite",
       description:
-        "Landing page moderna e responsiva criada para uma cafeteria fictícia.",
-      imagem:
-        "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&fit=crop",
-      techologies: ["HTML", "CSS", "JavaScript", "GSAP"],
-      github: "",
-      demo: "",
+        "API REST desenvolvida com Express que fornece dados dos personagens do anime Classroom of the Elite. A aplicação está hospedada em produção e pode ser consumida por qualquer frontend.",
+      imagem:"/Apisoft.png",
+      techologies: ["Node.js", "Express", "REST API", "Render"],
+      github: "https://github.com/DevDaviDias/api-school-of-elite",
+      demo: "https://api-school-of-elite.onrender.com/",
       featured: false,
     },
   ];

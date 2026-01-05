@@ -100,11 +100,12 @@ export default function MenuHamburguer() {
           <a href="#sobre">
             <i className="fas fa-user icon-circle"></i> Sobre mim
           </a>
-          <a href="#skill">
-            <i className="fas fa-code icon-circle"></i> Minhas Skills
-          </a>
-          <a href="#">
+       
+          <a href="#formacoes">
             <i className="fas fa-graduation-cap icon-circle"></i> Formações
+          </a>
+             <a href="#skill">
+            <i className="fas fa-code icon-circle"></i> Minhas Skills
           </a>
           <a href="#projects">
             <i className="fas fa-folder-open icon-circle"></i> Meus Projetos
