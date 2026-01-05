@@ -15,7 +15,7 @@ export default function Home() {
       <Header />
     
       <SobreMin />
-     
+      <Formacoes/>
       <MinhasSkills />
 
       <Progetos />

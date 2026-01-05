@@ -7,7 +7,7 @@ import React from 'react';
 export default function Subtitulo({subtitle}:Props){
     return(
         <>
-        <h2 className='text-black font-bold pb-4 text-lg'>{subtitle}</h2>
+        <h2 className='text-black font-bold pb-4 text-lg '>{subtitle}</h2>
         </>    
         )
 }
