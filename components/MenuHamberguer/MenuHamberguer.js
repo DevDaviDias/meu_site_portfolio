@@ -110,6 +110,17 @@ export default function MenuHamburguer() {
           <a href="#projects">
             <i className="fas fa-folder-open icon-circle"></i> Meus Projetos
           </a>
+            <a href="#projects">
+            <i className="fas fa-newspaper icon-circle 
+                                          text-gray-400
+                                          cursor-not-allowed
+                                          pointer-events-none
+                                          opacity-50 "></i> <span 
+                                          className="text-gray-400
+                                          cursor-not-allowed
+                                          pointer-events-none
+                                          opacity-70 ">Blog (Em Breve)...</span>
+          </a>
         </nav>
 
         {/* Botão de download do CV 
@@ -134,9 +145,11 @@ export default function MenuHamburguer() {
             )}
             {isDark ? "Light Mode" : "Dark Mode"}
           </Button>
-        </div>*/}
+        </div>
 
         {/* Footer */}
+        
+
         <div className={styles.footerMenu}>
           <p>© Copyright Davi Dias</p>
         </div>
