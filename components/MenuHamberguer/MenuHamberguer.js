@@ -5,16 +5,18 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Sun, Moon } from "lucide-react";
 import Button from "../ui/button";
 
-{/* import { Button } from "@/components/ui/button"; 
+{
+  /* import { Button } from "@/components/ui/button"; 
 export default function MenuHamburguer() {
   const [isDark, setIsDark] = useState(false);
 
   const toggleTheme = () => {
     document.documentElement.classList.toggle("dark");
     setIsDark(!isDark);
-  };*/}
+  };*/
+}
 
-export default function MenuHamburguer() {
+export default function MenuHamburguer({ onChangeSessao }) {
   const [aberto, setAberto] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
 
@@ -97,29 +99,84 @@ export default function MenuHamburguer() {
 
         {/* Links */}
         <nav className={styles.menuLinks}>
-          <a href="#sobre">
+          <a
+            onClick={() => onChangeSessao("sobre")}
+            className="
+    bg-transparent
+    border-none
+    p-0
+    text-white
+    cursor-pointer
+    
+  "
+          >
             <i className="fas fa-user icon-circle"></i> Sobre mim
           </a>
-       
-          <a href="#formacoes">
+
+          <a
+            onClick={() => onChangeSessao("formacoes")}
+            className="
+    bg-transparent
+    border-none
+    p-0
+    text-white
+    cursor-pointer
+    
+  "
+          >
             <i className="fas fa-graduation-cap icon-circle"></i> Formações
           </a>
-             <a href="#skill">
+          <a
+            onClick={() => onChangeSessao("skills")}
+            className="
+    bg-transparent
+    border-none
+    p-0
+    text-white
+    cursor-pointer
+    
+  "
+          >
             <i className="fas fa-code icon-circle"></i> Minhas Skills
           </a>
-          <a href="#projects">
+          <a
+            onClick={() => onChangeSessao("progets")}
+            className="
+    bg-transparent
+    border-none
+    p-0
+    text-white
+    cursor-pointer
+    
+  "
+          >
             <i className="fas fa-folder-open icon-circle"></i> Meus Projetos
           </a>
-            <a href="#projects">
-            <i className="fas fa-newspaper icon-circle 
+          <a
+            className="
+    bg-transparent
+    border-none
+    p-0
+    text-white
+    cursor-pointer
+    
+  "
+          >
+            <i
+              className="fas fa-newspaper icon-circle 
                                           text-gray-400
                                           cursor-not-allowed
                                           pointer-events-none
-                                          opacity-50 "></i> <span 
-                                          className="text-gray-400
+                                          opacity-50 "
+            ></i>{" "}
+            <span
+              className="text-gray-400
                                           cursor-not-allowed
                                           pointer-events-none
-                                          opacity-70 ">Blog (Em Breve)...</span>
+                                          opacity-70 "
+            >
+              Blog (Em Breve)...
+            </span>
           </a>
         </nav>
 
@@ -148,7 +205,6 @@ export default function MenuHamburguer() {
         </div>
 
         {/* Footer */}
-        
 
         <div className={styles.footerMenu}>
           <p>© Copyright Davi Dias</p>

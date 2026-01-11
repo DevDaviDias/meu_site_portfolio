@@ -54,7 +54,7 @@ export default function Skills() {
       >
         <h2
           id="skill"
-          className="text-3xl font-normal text-slate-800 mb-6 pt-4 pl-4 lg:pl-[12em]"
+          className="text-3xl  md:mt-[1em] font-normal text-slate-800 mb-6 pt-4 pl-4 lg:pl-[12em]  "
         >
           Minhas Skills
         </h2>

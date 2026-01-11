@@ -3,7 +3,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
-import Titulo from "../ui/titulo";
+
+
 
 export default function Projetos() {
   const projetos = [
@@ -65,7 +66,7 @@ export default function Projetos() {
 
   return (
     <section
-      id="projects"
+      
       className="md:w-[73em]  bg-gradient-to-br  md:ml-[24.5em]"
     >
       <div className="container mx-auto px-6">
@@ -76,17 +77,20 @@ export default function Projetos() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
+           <h3 className=" md:mt-10 text-3xl font-bold text-slate-800 mb-6 text-left pl-4 ">
+           Meus Projetos
+          </h3>
+          
+          <h4  className="text-black mb-[2em] pb-4 text-lg pl-4 text-left">Projetos em Destaque</h4>
         </motion.div>
 
         {/* Projetos em Destaque */}
         <div className="mb-16">
-          <h3 className="text-3xl font-bold text-slate-800 mb-6 pt-4 pl-4 ">
-           Meus Projetos
-          </h3>
-          <h4  className="text-black mb-[2em] pb-4 text-lg pl-4 "> Projetos em Destaque</h4>
         
+         
           <div className="grid  md:grid-cols-2 gap-8">
             {featuredProjects.map((project, index) => (
+              
               <motion.div
                 key={project.title}
                 initial={{ opacity: 0, y: 30 }}
@@ -94,6 +98,7 @@ export default function Projetos() {
                 transition={{ duration: 0.8, delay: index * 0.2 }}
                 viewport={{ once: true }}
               >
+                
                 <Card className="group hover:shadow-2xl transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm overflow-hidden">
                   <img
                     src={project.imagem}
@@ -160,10 +165,22 @@ export default function Projetos() {
 
         {/* Outros Projetos */}
         <div>
+            <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
           <h3 className="text-2xl font-bold text-slate-800 mb-8 text-center">
             Outros Projetos
           </h3>
+        </motion.div>
+
+          
+          
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
             {otherProjects.map((project, index) => (
               <motion.div
                 key={project.title}
@@ -171,13 +188,17 @@ export default function Projetos() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
+                
               >
+               
                 <Card className="group hover:shadow-lg transition-all duration-300 border-0 bg-white/80 backdrop-blur-sm h-full">
+                
                   <img
                     src={project.imagem}
                     alt={project.title}
                     className="w-full h-32 object-cover"
                   />
+                  
 
                   <CardHeader className="pb-2">
                     <CardTitle className="text-lg text-slate-800">

@@ -50,7 +50,7 @@ const certificacoes = [
 export default function Formacoes() {
   return (
     <>
-      <h2 id="formacoes"></h2>
+      <h2 id="formacoes" className=" md:mt-[1em]"></h2>
       <Titulo texto="Formações"></Titulo>
 
       <h2 className="ml-[1em] md:ml-[17.4em] mb-[1em] text-[1.4rem] text-slate-600 ">
