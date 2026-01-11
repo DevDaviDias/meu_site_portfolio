@@ -38,31 +38,29 @@ function Main() {
                 <div className={styles.minhahistoria}>
                   <Subtitulo subtitle="Minha História"></Subtitulo>
                   <p>
-                    Olá! Sou Davi Dias, desenvolvedor front-end apaixonado por
-                    tecnologia. Atualmente curso Análise e Desenvolvimento de
-                    Sistemas e busco evoluir constantemente como profissional,
-                    com a meta de me tornar um desenvolvedor full stack.
-                    Acredito que a programação transforma ideias em soluções
-                    reais, e estou sempre em busca de novos desafios e
-                    aprendizado.
+                    Sou Desenvolvedor de Software, com foco em desenvolvimento
+                    web utilizando JavaScript, TypeScript, React.js e Node.js.
+                    Atuo na criação de aplicações, sites e automações, aplicando
+                    boas práticas de código, organização de projetos e
+                    versionamento com Git.
                   </p>
                   <br />
                   <p>
-                    Tenho experiência com HTML, CSS, JavaScript e Git, e estou
-                    expandindo meus conhecimentos em React, Node.js, PHP e
-                    bancos de dados. Meu objetivo é criar aplicações funcionais,
-                    eficientes e com design moderno, contribuindo para projetos
-                    que impactem positivamente as pessoas.
+                    Possuo experiência no desenvolvimento de soluções web
+                    modernas, consumo de APIs REST, componentes reutilizáveis e
+                    integração entre frontend e backend. Estou em constante
+                    evolução técnica, com foco na entrega de soluções
+                    eficientes, escaláveis e de fácil manutenção.
                   </p>
                   <br />
-
                   <p>
-                    Além do desenvolvimento, leciono programação e robótica, o
-                    que fortalece minhas habilidades de comunicação, didática e
-                    trabalho em equipe. Estou aberto a oportunidades que me
-                    permitam aplicar meus conhecimentos, aprender e crescer como
-                    desenvolvedor.
+                    Busco oportunidades para atuar em ambientes colaborativos,
+                    onde seja possível aplicar meus conhecimentos, aprender
+                    continuamente e contribuir para o desenvolvimento de
+                    produtos de alto impacto, alinhados às necessidades do
+                    negócio e à melhor experiência do usuário.
                   </p>
+                  
                 </div>
               </div>
             </motion.div>
