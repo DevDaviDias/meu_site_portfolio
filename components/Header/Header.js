@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import styles from "./Header.module.css";
+import {motion} from "framer-motion";
 
 export default function Header() {
   const [text, setText] = useState("");
@@ -31,6 +32,14 @@ export default function Header() {
   }, [deleting, fullText]);
 
   return (
+    <>
+    <motion.div
+    initial ={{opacity:0, y:-20}}
+    animate ={{opacity:1, y:0}}
+    transition = {{duration:0.5}}
+    viewport={{ once: true }}
+
+>
     <div className={styles.fundo}>
       <div className={styles.titleCenter}>
         <h1 className={styles.titulo}>Davi Dias</h1>
@@ -40,5 +49,7 @@ export default function Header() {
         </h2>
       </div>
     </div>
+    </motion.div>
+    </>
   );
 }

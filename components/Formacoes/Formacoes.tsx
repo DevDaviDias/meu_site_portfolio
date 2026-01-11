@@ -1,6 +1,7 @@
 import Titulo from "../ui/titulo";
 import Cardeducação from "../ui/Cardeducaçao";
 import CardCertificacoes from "../ui/CardCertificacoes";
+import {motion} from "framer-motion"; 
 
 const formações = [
   {
@@ -50,6 +51,11 @@ const certificacoes = [
 export default function Formacoes() {
   return (
     <>
+    <motion.div
+        initial={{ opacity: 0, y:20 }}
+        animate={{ opacity: 1, y:0 }}
+        transition={{ duration: 0.6 }}
+      >
       <h2 id="formacoes" className=" md:mt-[1em]"></h2>
       <Titulo texto="Formações"></Titulo>
 
@@ -64,7 +70,13 @@ export default function Formacoes() {
         anoConclusao={formação.anoConclusao}
         descricao={formação.descricao}
       />))}
+</motion.div>
 
+ <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.0 }}
+      >
       <Titulo texto="Cursos & Certificações"></Titulo>
 
       <div className="flex flex-wrap items-center justify-start ml-[2em] md:ml-[23.5em] gap-4">
@@ -79,6 +91,7 @@ export default function Formacoes() {
           />
         ))}
       </div>
+      </motion.div>
     </>
   );
 }
