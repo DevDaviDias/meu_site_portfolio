@@ -77,11 +77,11 @@ export default function Projetos() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-           <h3 className=" md:mt-10 text-3xl font-bold text-slate-800 mb-6 text-left pl-4 ">
+           <h3 className=" mt-8 md:mt-10 text-3xl font-bold text-slate-800 mb-6 text-left pl-4 ">
            Meus Projetos
           </h3>
           
-          <h4  className="text-black mb-[2em] pb-4 text-lg pl-4 text-left">Projetos em Destaque</h4>
+          <h4  className="text-black mb-[1em] pb-4 text-lg pl-4 text-left">Projetos em Destaque</h4>
         </motion.div>
 
         {/* Projetos em Destaque */}
