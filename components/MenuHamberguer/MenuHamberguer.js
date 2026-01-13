@@ -4,6 +4,7 @@ import Image from "next/image";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Sun, Moon } from "lucide-react";
 import Button from "../ui/button";
+import { motion } from "framer-motion";
 
 {
   /* import { Button } from "@/components/ui/button"; 
@@ -41,6 +42,7 @@ export default function MenuHamburguer({ onChangeSessao }) {
   return (
     <>
       {/* Botão Hambúrguer só no mobile */}
+     
       {!isDesktop && (
         <div
           className={`${styles.hamburguer} ${aberto ? styles.ativo : ""}`}
@@ -59,6 +61,12 @@ export default function MenuHamburguer({ onChangeSessao }) {
         )}
 
         {/* Avatar e nome */}
+          <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+      >
         <div className={styles.tituloIcone}>
           <div>
             <Image
@@ -73,15 +81,30 @@ export default function MenuHamburguer({ onChangeSessao }) {
             />
           </div>
         </div>
+        </motion.div>
+         <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+      >
         <h2 className={styles.titleName}>Davi Dias</h2>
-
+</motion.div>
         {/* Redes sociais */}
+      
+      
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+      >
         <nav className={styles.navRedesSociais}>
           <a
-            href="https://www.instagram.com/devdavidias/"
+            href="https://www.instagram.com/codecooperx/"
             className={styles.icons}
           >
-            <i className="fab fa-instagram fa-2x"></i>
+            <i className="fab fa-instagram fa-2x color:'hover:text-gray-900"></i>
           </a>
           <a href="https://github.com/DevDaviDias" className={styles.icons}>
             <i className="fab fa-github fa-2x"></i>
@@ -96,7 +119,13 @@ export default function MenuHamburguer({ onChangeSessao }) {
             <i className="fas fa-envelope fa-2x"></i>
           </a>
         </nav>
-
+         </motion.div>
+<motion.div
+       initial={{ opacity: 0, x: -80 }}
+       whileInView={{ opacity: 1, x: 0 }}
+       transition={{ duration: 0.5 }}
+       viewport={{ once: true }}
+       >
         {/* Links */}
         <nav className={styles.menuLinks}>
           <a
@@ -179,7 +208,7 @@ export default function MenuHamburguer({ onChangeSessao }) {
             </span>
           </a>
         </nav>
-
+ </motion.div>
         {/* Botão de download do CV 
         <div className={styles.botaoCV}>
           <Button

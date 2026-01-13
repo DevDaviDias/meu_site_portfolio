@@ -80,6 +80,23 @@
 
 .navRedesSociais a:hover {
   transform: scale(1.1);
+  
+}
+.navRedesSociais a:hover:nth-child(1) {
+  color: #cb379a;
+  
+}
+.navRedesSociais a:hover:nth-child(2) {
+  color:#0E2557;
+  
+}
+.navRedesSociais a:hover:nth-child(3) {
+  color: #0e7dbd;
+  
+}
+.navRedesSociais a:hover:nth-child(4) {
+  color:#d44234;
+  
 }
 
 .navRedesSociais i {
