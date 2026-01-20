@@ -12,22 +12,22 @@ export default function Projetos() {
      {
       title: "PinkLife",
       description:
-        "PinkLife é uma aplicação web estilo SaaS de organização pessoal voltada ao público feminino, que centraliza hábitos, estudos, treinos, finanças e rotina diária em um único painel interativo. O projeto prioriza produtividade, acompanhamento de progresso e bem-estar, oferecendo uma interface moderna, clean e amigável, projetada para facilitar o dia a dia e tornar a experiência do usuário mais agradável.",
-      imagem: "/projeto1.png",
+        "PinkLife é uma aplicação web estilo SaaS de organização pessoal voltada ao público feminino, que centraliza hábitos, estudos, treinos, finanças e rotina diária em um único painel interativo.",
+      imagem: "/pinklife.png",
       techologies: ["React", "Next.js", "MongoDb", "Node.js", "Express", "Git", "JWT", "Express"],
       github: "https://github.com/DevDaviDias/PinkLife",
       demo: "https://pink-life.vercel.app/",
       featured: true,
     },{
-      title: "Sistema de Gestão de Clientes e Serviços",
-      description:
-        "Aplicação web moderna para cadastro de clientes, controle de serviços e peças utilizadas. Desenvolvida inicialmente com JavaScript e Node.js. Futuras melhorias incluem Express, EJS e MongoDB.",
-      imagem: "/projeto1.png",
-      techologies: ["React", "Node.js", "PostgreSQL", "Stripe", "AWS"],
-      github: "https://github.com/DevDaviDias/Gestor-De-Servicos",
-      demo: "https://devdavidias.github.io/Gestor-De-Servicos/",
-      featured: true,
-    }
+  title: "Sistema de Gestão de Clientes e Serviços",
+  description:
+    "Aplicação web moderna para cadastro de clientes, controle de serviços e peças utilizadas. Desenvolvida com React no front-end e Node.js no back-end, utilizando PostgreSQL para gerenciamento de dados, Stripe para pagamentos e AWS para hospedagem e infraestrutura.",
+  imagem: "/projeto1.png",
+  techologies: ["React", "Node.js", "PostgreSQL", "Stripe","AWS"],
+  github: "https://github.com/DevDaviDias/Gestor-De-Servicos",
+  demo: "https://devdavidias.github.io/Gestor-De-Servicos/",
+  featured: true,
+}
     ,
     {
       title: "chronos pomodoro",
