@@ -8,7 +8,17 @@ import { ExternalLink, Github } from "lucide-react";
 
 export default function Projetos() {
   const projetos = [
-    {
+    
+     {
+      title: "PinkLife",
+      description:
+        "PinkLife é uma aplicação web estilo SaaS de organização pessoal voltada ao público feminino, que centraliza hábitos, estudos, treinos, finanças e rotina diária em um único painel interativo. O projeto prioriza produtividade, acompanhamento de progresso e bem-estar, oferecendo uma interface moderna, clean e amigável, projetada para facilitar o dia a dia e tornar a experiência do usuário mais agradável.",
+      imagem: "/projeto1.png",
+      techologies: ["React", "Next.js", "MongoDb", "Node.js", "Express", "Git", "JWT", "Express"],
+      github: "https://github.com/DevDaviDias/PinkLife",
+      demo: "https://pink-life.vercel.app/",
+      featured: true,
+    },{
       title: "Sistema de Gestão de Clientes e Serviços",
       description:
         "Aplicação web moderna para cadastro de clientes, controle de serviços e peças utilizadas. Desenvolvida inicialmente com JavaScript e Node.js. Futuras melhorias incluem Express, EJS e MongoDB.",
@@ -17,17 +27,8 @@ export default function Projetos() {
       github: "https://github.com/DevDaviDias/Gestor-De-Servicos",
       demo: "https://devdavidias.github.io/Gestor-De-Servicos/",
       featured: true,
-    },
-    {
-      title: "Dashboard de Criptomoedas",
-      description:
-        "Dashboard interativo que exibe preços em tempo real, variação das últimas 24 horas e gráficos dos últimos 7 dias de diversas criptomoedas.",
-      imagem: "/cripto.jpg",
-      techologies: ["HTML5", "CSS3", "JavaScript", "Chart.js", "API CoinGecko"],
-      github: "https://github.com/DevDaviDias/meu-crypto-dashboard",
-      demo: "https://devdavidias.github.io/meu-crypto-dashboard/",
-      featured: true,
-    },
+    }
+    ,
     {
       title: "chronos pomodoro",
       description:
@@ -39,14 +40,14 @@ export default function Projetos() {
       demo: "https://devdavidias.github.io/chronos-pomodoro/",
       featured: false,
     },
-    {
-      title: "Meteora – Loja de Moda Responsiva",
+   {
+      title: "Dashboard de Criptomoedas",
       description:
-        "Loja fictícia de moda desenvolvida como primeiro projeto com Bootstrap.",
-      imagem: "/meteora.png",
-      techologies: ["HTML5", "CSS3", "Bootstrap 5", "JavaScript"],
-      github: "https://github.com/DevDaviDias/Meteora",
-      demo: "https://devdavidias.github.io/Meteora/",
+        "Dashboard interativo que exibe preços em tempo real, variação das últimas 24 horas e gráficos dos últimos 7 dias de diversas criptomoedas.",
+      imagem: "/cripto.jpg",
+      techologies: ["HTML5", "CSS3", "JavaScript", "Chart.js", "API CoinGecko"],
+      github: "https://github.com/DevDaviDias/meu-crypto-dashboard",
+      demo: "https://devdavidias.github.io/meu-crypto-dashboard/",
       featured: false,
     },
     {
