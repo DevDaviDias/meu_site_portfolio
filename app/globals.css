@@ -2,15 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@layer base {
+  :root {
+    /* Modo Claro - Seu azul claro original */
+    --background: 185 100% 95%; /* Equivalente ao #E6FDFF */
+    --foreground: 222 47% 11%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    
+    --primary: 188 86% 53%; /* Seu Ciano #63DEF1 */
+    --primary-foreground: 210 40% 98%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 188 86% 53%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    /* Modo Escuro - Slate 950 (Fundo Profundo) */
+    --background: 222 47% 4%; 
+    --foreground: 210 40% 98%;
+    
+    --card: 222 47% 6%;
+    --card-foreground: 210 40% 98%;
+    
+    --primary: 188 86% 53%;
+    --primary-foreground: 222 47% 11%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 188 86% 53%;
+  }
 }
 
-html, body {
-  scroll-behavior: smooth;
-  height: 100%;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: #E6FDFF;
+@layer base {
+  * {
+    @apply border-border;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    @apply bg-background text-foreground;
+    scroll-behavior: smooth;
+    min-height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
 }
