@@ -1,10 +1,11 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { memo } from "react";
+import { LazyMotion, domAnimation, m as motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
-// 1. DEFINIÇÃO DOS DADOS (Isolados para facilitar a manutenção)
+// 1. DEFINIÇÃO DOS DADOS
 const SKILLS_DATA = [
   {
     titulo: "Frontend",
@@ -42,52 +43,67 @@ const CERTIFICACOES = [
   "Conceitos de Engenharia de Software",
 ];
 
+// Variants reutilizáveis
+const fadeUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
+
+const barGrow = {
+  hidden: { width: 0 },
+  visible: (w: number) => ({ width: `${w}%` }),
+};
+
 export default function Skills() {
   return (
-    <section id="skill" className="w-full py-10 lg:ml-[288px] lg:w-[calc(100%-288px)] transition-all duration-300">
-      {/* Alinhamento igual ao de Projetos: pl-20 */}
-      <div className="w-full px-4 md:pl-20 md:pr-10 max-w-[1440px]">
-        
-        {/* Cabeçalho */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="mb-12"
-        >
-          <h2 className="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white mb-2 tracking-tight">
-            Minhas Skills
-          </h2>
-          <p className="text-[#63DEF1] font-medium text-lg uppercase tracking-widest pl-1">
-            Stack Tecnológica
-          </p>
-        </motion.div>
+    <LazyMotion features={domAnimation}>
+      <section
+        id="skill"
+        className="w-full py-10 lg:ml-[288px] lg:w-[calc(100%-288px)]"
+      >
+        <div className="w-full px-4 md:pl-20 md:pr-10 max-w-[1440px]">
 
-        {/* Grid de Skills */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-          {SKILLS_DATA.map((category, index) => (
-            <SkillCategoryCard key={category.titulo} category={category} index={index} />
-          ))}
+          {/* Cabeçalho */}
+          <motion.div
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 0.4 }}
+            viewport={{ once: true, margin: "-80px" }}
+            className="mb-12"
+          >
+            <h2 className="text-3xl md:text-5xl font-bold text-slate-900 dark:text-white mb-2 tracking-tight">
+              Minhas Skills
+            </h2>
+            <p className="text-[#63DEF1] font-medium text-lg uppercase tracking-widest pl-1">
+              Stack Tecnológica
+            </p>
+          </motion.div>
+
+          {/* Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            {SKILLS_DATA.map((category) => (
+              <SkillCategoryCard key={category.titulo} category={category} />
+            ))}
+          </div>
+
+          <CertificationsSection certificates={CERTIFICACOES} />
         </div>
-
-        {/* Seção de Certificados */}
-        <CertificationsSection certificates={CERTIFICACOES} />
-
-      </div>
-    </section>
+      </section>
+    </LazyMotion>
   );
 }
 
-// --- SUB-COMPONENTES ---
+// ---------- SUBCOMPONENTES OTIMIZADOS ----------
 
-function SkillCategoryCard({ category, index }: { category: any; index: number }) {
+const SkillCategoryCard = memo(function SkillCategoryCard({ category }: { category: any }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-      viewport={{ once: true }}
+      variants={fadeUp}
+      initial="hidden"
+      whileInView="visible"
+      transition={{ duration: 0.4 }}
+      viewport={{ once: true, margin: "-60px" }}
     >
       <Card className="bg-white dark:bg-slate-900/50 backdrop-blur-md border-none shadow-xl h-full hover:shadow-2xl transition-all duration-300">
         <CardHeader>
@@ -95,6 +111,7 @@ function SkillCategoryCard({ category, index }: { category: any; index: number }
             {category.titulo}
           </CardTitle>
         </CardHeader>
+
         <CardContent className="space-y-6 pt-4">
           {category.habilidades.map((skill: any) => (
             <div key={skill.name} className="space-y-2">
@@ -106,13 +123,15 @@ function SkillCategoryCard({ category, index }: { category: any; index: number }
                   {skill.level}%
                 </span>
               </div>
-              {/* Barra de Progresso Customizada */}
+
               <div className="w-full bg-slate-100 dark:bg-white/10 rounded-full h-2 overflow-hidden">
                 <motion.div
-                  initial={{ width: 0 }}
-                  whileInView={{ width: `${skill.level}%` }}
-                  transition={{ duration: 1.5, ease: "easeOut" }}
+                  variants={barGrow}
+                  custom={skill.level}
+                  initial="hidden"
+                  whileInView="visible"
                   viewport={{ once: true }}
+                  transition={{ duration: 0.9, ease: "easeOut" }}
                   className={`h-full bg-gradient-to-r ${skill.color} rounded-full`}
                 />
               </div>
@@ -122,15 +141,16 @@ function SkillCategoryCard({ category, index }: { category: any; index: number }
       </Card>
     </motion.div>
   );
-}
+});
 
-function CertificationsSection({ certificates }: { certificates: string[] }) {
+const CertificationsSection = memo(function CertificationsSection({ certificates }: { certificates: string[] }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-      viewport={{ once: true }}
+      variants={fadeUp}
+      initial="hidden"
+      whileInView="visible"
+      transition={{ duration: 0.4 }}
+      viewport={{ once: true, margin: "-60px" }}
     >
       <Card className="bg-white dark:bg-slate-900/50 backdrop-blur-md border-none shadow-xl overflow-hidden">
         <div className="bg-[#63DEF1]/10 px-6 py-4 border-l-4 border-[#63DEF1]">
@@ -154,4 +174,4 @@ function CertificationsSection({ certificates }: { certificates: string[] }) {
       </Card>
     </motion.div>
   );
-}
+});

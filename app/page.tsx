@@ -18,9 +18,8 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background transition-colors duration-300">
-      {/* O MenuLateral agora controla o tema e a navegação */}
       <MenuHamburguer onChangeSessao={handleSessao} />
-      
+
       {/* Container Principal */}
       <main className="flex flex-col w-full">
         <Header />

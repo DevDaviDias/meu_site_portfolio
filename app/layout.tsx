@@ -1,6 +1,8 @@
+// app/layout.tsx
 import "./globals.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import React from "react";
+import ClientLayout from "./client-layout";
 
 export const metadata = {
   title: "Meu Portfólio | Davi Dias",
@@ -14,11 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br" suppressHydrationWarning>
-      {/* O bg-white (claro) e dark:bg-slate-950 (escuro) garantem que 
-        o fundo da página mude automaticamente. 
-      */}
       <body className="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300">
-        {children}
+        <ClientLayout>
+          {children}
+        </ClientLayout>
       </body>
     </html>
   );
